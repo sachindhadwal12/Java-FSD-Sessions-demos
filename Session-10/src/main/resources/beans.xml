@@ -1,0 +1,51 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<beans xmlns="http://www.springframework.org/schema/beans"-->
+<!--       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--       xsi:schemaLocation="-->
+<!--        http://www.springframework.org/schema/beans-->
+<!--         http://www.springframework.org/schema/beans/spring-beans.xsd">-->
+
+<!--    &lt;!&ndash; bean definitions here &ndash;&gt;-->
+
+<!--    <bean class="com.learning.Hobby" id="hby">-->
+<!--        <constructor-arg name="hobbyName" value="Chess"/>-->
+<!--        <constructor-arg name="startDate" value="02-03-2004"/>-->
+<!--    </bean>-->
+<!--    <bean class="com.learning.Hobby" id="hby1">-->
+<!--        <constructor-arg name="hobbyName" value="Volleyball"/>-->
+<!--        <constructor-arg name="startDate" value="02-03-20014"/>-->
+<!--    </bean>-->
+<!--    <bean class="com.learning.Hobby" id="hby2">-->
+<!--        <constructor-arg name="hobbyName" value="Coding"/>-->
+<!--        <constructor-arg name="startDate" value="02-03-2020"/>-->
+<!--    </bean>-->
+
+
+<!--    <bean id="std" class="com.learning.Student" scope="singleton" init-method="init" destroy-method="destroy">-->
+<!--        <property name="name" value="Sachin"/>-->
+<!--        <property name="email" value="sachin@gmail.com"/>-->
+<!--        <property name="hobbyList">-->
+<!--            <list>-->
+<!--                <ref bean="hby"/>-->
+<!--                <ref bean="hby1"/>-->
+<!--                <ref bean="hby2"/>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--    </bean>-->
+
+
+
+
+<!--&lt;!&ndash;    <bean id="std" class="com.learning.Student">&ndash;&gt;-->
+<!--&lt;!&ndash;        <constructor-arg name="name" value="Sachin"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <constructor-arg name="email" value="schin@gmail.com"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <constructor-arg>&ndash;&gt;-->
+<!--&lt;!&ndash;            <list>&ndash;&gt;-->
+<!--&lt;!&ndash;                <ref bean="hby"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <ref bean="hby1"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <ref bean="hby2"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            </list>&ndash;&gt;-->
+<!--&lt;!&ndash;        </constructor-arg>&ndash;&gt;-->
+<!--&lt;!&ndash;    </bean>&ndash;&gt;-->
+
+<!--</beans>-->

@@ -1,0 +1,11 @@
+
+### Gradle ###
+.gradle/
+build/
+!**/src/**/build/
+.gradletasknamecache
+gradle-app.setting
+
+# Track the Gradle Wrapper explicitly (recommended)
+!gradle-wrapper.jar
+!
