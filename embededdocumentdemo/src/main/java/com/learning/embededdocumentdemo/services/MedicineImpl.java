@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class MedicineImpl implements MedicineDdao{
+public class MedicineImpl  implements  MedicineDdao{
 
     private MedicineRepository repository;
 

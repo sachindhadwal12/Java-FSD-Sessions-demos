@@ -21,4 +21,12 @@ public class GlobalException {
     public ResponseEntity<?> MedicineNameNotFoundException(MedicineNameNotFoundException exception){
         return new ResponseEntity<>(exception.getMessage(), HttpStatus.NOT_FOUND);
     }
+    @ExceptionHandler(MedicalShopDoesNotFoundException.class)
+    public ResponseEntity<?> MedicalShopDoesNotFoundException(MedicalShopDoesNotFoundException exception){
+        return new ResponseEntity<>(exception.getMessage(), HttpStatus.NOT_FOUND);
+    }
+    @ExceptionHandler(MedicalShopIdAlreadyExistException.class)
+    public ResponseEntity<?> MedicalShopIdAlreadyExistException(MedicalShopIdAlreadyExistException exception){
+        return new ResponseEntity<>(exception.getMessage(),HttpStatus.CONFLICT);
+    }
 }
