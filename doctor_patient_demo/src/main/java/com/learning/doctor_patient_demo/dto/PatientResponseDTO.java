@@ -21,7 +21,7 @@ public class PatientResponseDTO {
     private  String email;
     private String phoneNumber;
     private String diagnosis;
-    private String admissionDate;
+    private LocalDate admissionDate;
     private Patient.Gender gender;
 
     private  Long doctorId;

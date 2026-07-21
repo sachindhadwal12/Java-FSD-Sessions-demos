@@ -1,15 +1,32 @@
+#spring:
+#  application:
+#    name: doctor_patient_demo
+#  datasource:
+#    driver-class-name: org.postgresql.Driver
+#    username: postgres
+#    url: jdbc:postgresql://localhost:5432/doctor_db
+#    password: root@123
+#    jpa:
+#      properties:
+#        hibernate:
+#          dialect: org.hibernate.dialect.PostgreSQLDialect
+#      hibernate:
+#        ddl-auto: update
+#      show-sql: 'true'
+
 spring:
-  application:
-    name: doctor_patient_demo
   datasource:
-    driver-class-name: org.postgresql.Driver
-    username: postgres
-    url: jdbc:postgresql://localhost:5432/doctor_db
-    password: root@123
-    jpa:
-      properties:
-        hibernate:
-          dialect: org.hibernate.dialect.PostgreSQLDialect
-      hibernate:
-        ddl-auto: update
-      show-sql: 'true'
+    driver-class-name: org.h2.Driver
+    username: sa
+    url: jdbc:h2:mem:patientdb
+    password: password
+  h2:
+    console:
+      enabled: 'true'
+      path: /h2-console
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+server:
+  port: '8083'
