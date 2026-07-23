@@ -23,8 +23,8 @@ public class SecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http){
         http.authorizeHttpRequests(auth -> auth
                .requestMatchers("/","/public/**").permitAll()
-                .requestMatchers("/admin/**").hasRole("ADMIN")
-                .requestMatchers("/user/**").hasAnyRole("USER","ADMIN")
+                .requestMatchers("/admin/**").hasRole("ADMINISTRATOR")
+                .requestMatchers("/user/**").hasAnyRole("USER","ADMINISTRATOR")
                 .anyRequest().authenticated()
                 ).formLogin(Customizer.withDefaults())
                 .logout(Customizer.withDefaults());
@@ -41,7 +41,7 @@ public class SecurityConfig {
         UserDetails admin = User.builder()
                 .username("admin")
                 .password(encoder.encode("admin"))
-                .roles("ADMIN")
+                .roles("ADMINISTRATOR")
                 .build();
         return new InMemoryUserDetailsManager(user,admin);
     }

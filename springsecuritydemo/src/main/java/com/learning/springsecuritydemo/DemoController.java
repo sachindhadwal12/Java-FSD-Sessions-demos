@@ -36,7 +36,7 @@ public class DemoController {
 
 
     @GetMapping("api/secret")
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasRole('ADMINISTRATOR')")
     public String secretInfo(Authentication auth) {
         return "Secret info endpoint - only for ADMINs. Hello " + auth.getName() + "!";
 

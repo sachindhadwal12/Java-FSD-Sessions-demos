@@ -49,7 +49,7 @@ public class PatientService implements PatientDao {
            repository.deleteById(id);
        }
        else {
-           throw  new PatientIdNotFoundException("Patient id  "+ id + " does not found ");
+           throw  new PatientIdNotFoundException("Patient id "+ id + " does not found ");
        }
     }
 
