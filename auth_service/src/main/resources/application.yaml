@@ -1,0 +1,21 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: auth_service
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/auth_db
+    password: root@123
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+    secret: 7A2567AN348743SGHJ8795487543843DKJHDFN37553427DKHDFKJHGSKD6732687326786783276
+    expiration-ms: 300000 # Token expiration time in milliseconds
