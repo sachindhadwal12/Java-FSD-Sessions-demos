@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/feign")
-@CircuitBreaker(name = "sachin" ,fallbackMethod = "getError")
+
 public class FeignController {
 
     @Autowired
@@ -26,7 +26,7 @@ public class FeignController {
     }
 
     @GetMapping("getAllMedicalShop")
-
+    @CircuitBreaker(name = "sachin" ,fallbackMethod = "getError")
     public ResponseEntity<?> getAllMedicalShop() {
         return new ResponseEntity<>(feignService.getAllMedicalShop(), HttpStatus.OK);
     }

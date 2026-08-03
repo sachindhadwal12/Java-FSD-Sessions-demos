@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("api/v1/medicine")
+@RequestMapping("api/v2/medicine")
 public class MedicineController {
 
     private MedicineImpl service;

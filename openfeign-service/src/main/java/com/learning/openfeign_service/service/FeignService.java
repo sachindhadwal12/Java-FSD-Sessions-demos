@@ -11,10 +11,10 @@ import java.util.List;
 @FeignClient(name = "embededdocumentdemo",url = "http://localhost:8083/")
 public interface FeignService {
 
-    @GetMapping("api/v1/pharamcy")
+    @GetMapping("api/v2/pharamcy")
     public List<MedicalShop> getAllMedicalShop();
 
-    @PostMapping("api/v1/pharamcy")
+    @PostMapping("api/v2/pharamcy")
     public MedicalShop addMedicalShop(@RequestBody MedicalShop medicalShop);
 
 }

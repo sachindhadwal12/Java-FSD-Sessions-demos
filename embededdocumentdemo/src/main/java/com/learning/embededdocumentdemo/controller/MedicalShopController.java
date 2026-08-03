@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("api/v1/pharamcy")
+@RequestMapping("api/v2/pharamcy")
 public class MedicalShopController {
     private MedicalShopService service;
 
